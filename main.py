@@ -1,4 +1,12 @@
 import streamlit as st
+import pandas as pd
+import matplotlib.pyplot as plt
+from io import BytesIO
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression, Ridge, Lasso
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.svm import SVR
+from sklearn.metrics import mean_squared_error
 from app import main as app_main
 from app2 import main as app2_main
 
